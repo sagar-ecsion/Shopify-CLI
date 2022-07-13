@@ -1,0 +1,82 @@
+{% if section.settings.enable_countdown %}
+
+  <section class="countdown-bar-container">
+    <div class="countdown-bar-header">
+      <h1>{{ section.settings.title }}</h1>
+    </div>
+    <div class="countdown" id="countdown" data-date="" data-time="00:00">
+      <div class="day"> 
+        <span class="num"></span>
+        <span class="word"></span>
+      </div>
+      <div class="hour"> 
+        <span class="num"></span>
+        <span class="word"></span>
+      </div>
+      <div class="min">
+        <span class="num"></span>
+        <span class="word"></span>
+      </div>
+      <div class="sec"> 
+       <span class="num"></span>
+        <span class="word"></span>
+      </div>
+    
+    </div>
+   
+  </section>
+
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Countdown Bar",
+    "settings": [
+       {
+         "type":"text",
+         "id": "title",
+         "default" : "SALE TEXT HERE",
+         "label" : "Countdown Heading Title"
+
+       },
+       {
+            "type" : "number",
+            "id" : "maxTime",
+            "default" : 0,
+            "label" : "Maximum Time"
+
+       },
+       {
+         "type":"checkbox",
+         "id": "enable_countdown",
+         "default" : false,
+         "label" : "Enable coutdown Bar"
+
+       }
+    ]
+  }
+{% endschema %}
+
+
+<script>
+  
+  var date = new Date();
+  
+  date.setDate(date.getDate() + {{ section.settings.maxTime }});
+  
+  var newDate = date.toLocaleDateString().split('/');
+  var newDateFormat = newDate[0] + '-' + newDate[1] + '-' + newDate[2];
+  
+  document.getElementById('countdown').setAttribute('data-date', newDateFormat);
+  
+  var dateDown = new countdown({
+    target: '#countdown',
+    dayWord: 'days',
+    hourWord: 'hours',
+    minWord: 'mins',
+    secWord: 'secs'
+  
+  });
+</script>
+

@@ -1,0 +1,73 @@
+<header class="collection-header">
+  {% if section.settings.display_collection_image %}
+   <div class="collection-image">
+    {% if section.settings.display_image_cls == 'image_category' %}
+          {% if section.settings.collection_image != blank %}
+            <img data-src="{{ section.settings.collection_image | img_url :"master"}}" alt="{{ collection.title | split: '|' | first }}" {% render 'lazyload' %}/>
+            {% else %}
+            <div class="no-image" style="padding-top:32%; font-size:20px">
+              <span>930 x 300px</span>
+            </div>
+          {% endif %}
+        {% else %}
+    
+        {% if collection.metafields.c_f['Image Collection'] %}
+       	{% capture img_product %}{{ collection.metafields.c_f['Image Collection'] }}{% endcapture %}
+          <img data-src="{{ img_product }}"  {% render 'lazyload' %}/>
+        {% endif %}
+    {% endif %}
+  </div>
+  
+  {% endif %}
+  
+  <div class="collection-wrapper page-header {{linklists[collection.handle].links}}_vf">
+    {% if collection.description != '' and section.settings.display_collection_des %}
+    <div class="collection-des">
+      {% if settings.enable_multilang and collection.description contains '[lang2]' %}      
+      <div class="rte lang1 ">
+        {{ collection.description | split: '[lang2]' | first | split: '<img' | first }}
+      </div>
+      <div class="rte lang2">
+        {{ collection.description | split: '[lang2]' | last | split: '<img' | first }}
+      </div>
+      {% else %}
+      <div class="rte">
+        {{ collection.description | split: '[lang2]' | first | split: '<img' | first }}
+      </div>
+      {% endif %}
+    </div>      
+    {% endif %}
+  </div>
+  {% if section.settings.display_sub_categories and linklists[collection.handle].links != blank%}
+  <div class="sub-categories">
+    {% if linklists[collection.handle].links != blank %}
+    <h2> {% render 'multilang' with section.settings.sub_collection_title %}</h2>
+    <div class="sub-categories-list" data-slider-sub-categories>
+      {% for link in linklists[collection.handle].links %}
+      {% assign sub_collection = link.object %}
+      {% assign count = sub_collection.products_count %}
+      {% assign imgColl = sub_collection.image | img_url :"300x" %}
+      <div class="sub-cate-item">
+        {% if sub_collection.image.src != blank %}
+        <div class="sub-cate-img">
+          <a href="{{ link.url }}"><img src="{{ imgColl }}" alt="{{ link.title }}"></a>
+        </div>
+        {% else %}
+        <div class="sub-cate-img ">
+          <a href="{{ link.url }}"><img src="{{'icon-sub-cate.png' | asset_url}}" alt="{{ link.title }}"></a>
+        </div>
+        {% endif %}
+        <div class="sub-cate-info">
+          <div class="sub-cate-info-inner">
+            <a class="sub-cat-name" href="{{ link.url }}">{{ link.title }}</a>
+            <span class="product-count">{{ count }} items</span>
+          </div>
+        </div>
+      </div> 
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+  
+</header>

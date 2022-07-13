@@ -1,0 +1,82 @@
+.countdown-bar-container{
+  display:flex;
+  width:100%;
+  background:yellow;
+  margin:0;
+  padding:10px;
+  justify-content: center;
+}
+
+.countdown{
+display: -webkit-box;
+display: -ms-flexbox;  
+display: flex;
+padding:10px 20px;
+border: 1px solid black;
+width: fit-content;
+height: fit-content;
+margin: auto 10px;
+
+}
+
+.countdown .day,
+.countdown .hour,
+.countdown .min,
+.countdown .sec{
+   padding:2px 20px;
+   text-align: center;
+  height: fit-content;
+  margin: auto 0px;
+}
+
+.countdown .day .num,
+.countdown .hour .num,
+.countdown .min .num,
+.countdown .sec .num{
+   display: block;
+  font-size: 20px;
+}
+
+.countdown .day .word,
+.countdown .hour .word,
+.countdown .min .word,
+.countdown .sec .word{
+   display: block;
+  font-size: 10px;
+}
+
+
+.countdown-bar-header{
+  height: fit-content;
+  width: fit-content;
+  margin: auto 15px;
+}
+
+.countdown-bar-header h1{
+  
+  margin: 0;
+}
+
+@media only screen and (max-width:768px){
+
+  .countdown-bar-container{
+      display:block;
+      
+   }
+  .countdown{
+     margin: 0 auto;
+  }
+  
+   .countdown-bar-header{
+      
+      width: fit-content;
+      margin: auto ;
+    }
+  
+  .countdown-bar-header h1{
+      font-size:20px;
+      margin-bottom: 10px;
+    }
+
+  
+}

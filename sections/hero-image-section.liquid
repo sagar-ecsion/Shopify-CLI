@@ -1,0 +1,182 @@
+
+
+<div class="hero-img-sec">
+  <div class="container">
+    
+     
+        <div class="one-third column">
+      	{%- unless section.settings.hero_img_one_link == blank -%}
+          <a href="{{ section.settings.hero_img_one_link }}" class="hero_img_one_link">
+            {%- endunless -%}
+            <img class="lazyload js"
+                     src="{{ section.settings.hero_img_one_img | img_url: '1024x1024' }}"
+                     data-src="{{ img_url }}"
+                     data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="{{ section.settings.logo.aspect_ratio }}"
+                     data-sizes="auto"
+                     alt="{{ logo_alt | escape }}">
+            {%- unless section.settings.hero_img_one_link == blank -%}
+          </a>
+        {%- endunless -%}
+      </div>
+        <div class="one-third column">
+          <div class="mb-2">
+		  	{%- unless section.settings.hero_img_two_link == blank -%}
+		      <a href="{{ section.settings.hero_img_two_link }}" class="hero_img_one_link">
+		        {%- endunless -%}
+		        <img class="lazyload js"
+		                 src="{{ section.settings.hero_img_two_img | img_url: '1024x1024' }}"
+		                 data-src="{{ img_url }}"
+		                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+		                 data-aspectratio="{{ section.settings.logo.aspect_ratio }}"
+		                 data-sizes="auto"
+		                 alt="{{ logo_alt | escape }}">
+		        {%- unless section.settings.hero_img_two_link == blank -%}
+		      </a>
+		    {%- endunless -%}
+          </div>
+             <div>
+            {%- unless section.settings.hero_img_thre_link == blank -%}
+                  <a href="{{ section.settings.hero_img_thre_link }}" class="hero_img_one_link">
+                    {%- endunless -%}
+                    <img class="lazyload js"
+                             src="{{ section.settings.hero_img_three_img | img_url: '1024x1024' }}"
+                             data-src="{{ img_url }}"
+                             data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                             data-aspectratio="{{ section.settings.logo.aspect_ratio }}"
+                             data-sizes="auto"
+                             alt="{{ logo_alt | escape }}">
+                    {%- unless section.settings.hero_img_thre_link == blank -%}
+                  </a>
+                {%- endunless -%}
+               </div>
+		    </div>
+        <div class="one-third column">
+          <div class="mb-2">
+                {%- unless section.settings.hero_img_four_link == blank -%}
+                  <a href="{{ section.settings.hero_img_four_link }}" class="hero_img_one_link">
+                    {%- endunless -%}
+                    <img class="lazyload js"
+                             src="{{ section.settings.hero_img_four_img | img_url: '1024x1024' }}"
+                             data-src="{{ img_url }}"
+                             data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                             data-aspectratio="{{ section.settings.logo.aspect_ratio }}"
+                             data-sizes="auto"
+                             alt="{{ logo_alt | escape }}">
+                    {%- unless section.settings.hero_img_four_link == blank -%}
+                  </a>
+                {%- endunless -%}
+          </div>
+           <div>
+          {%- unless section.settings.hero_img_five_link == blank -%}
+                <a href="{{ section.settings.hero_img_five_link }}" class="hero_img_one_link">
+                  {%- endunless -%}
+                  <img class="lazyload js"
+                           src="{{ section.settings.hero_img_five_img | img_url: '1024x1024' }}"
+                           data-src="{{ img_url }}"
+                           data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                           data-aspectratio="{{ section.settings.logo.aspect_ratio }}"
+                           data-sizes="auto"
+                           alt="{{ logo_alt | escape }}">
+                  {%- unless section.settings.hero_img_five_link == blank -%}
+                </a>
+              {%- endunless -%}
+             </div>
+            
+              </div>
+        
+      
+      
+      
+   
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "en": "Hero Images"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero_img_one_img",
+      "label": {
+        "en": "Image One"
+      }
+    },
+    {
+      "type": "url",
+      "id": "hero_img_one_link",
+      "label": {
+        "en": "Image link"
+      }
+    },
+	{
+      "type": "image_picker",
+      "id": "hero_img_two_img",
+      "label": {
+        "en": "Image Two"
+      }
+    },
+    {
+      "type": "url",
+      "id": "hero_img_two_link",
+      "label": {
+        "en": "Image link"
+      }
+    },
+	{
+      "type": "image_picker",
+      "id": "hero_img_three_img",
+      "label": {
+        "en": "Image Three"
+      }
+    },
+    {
+      "type": "url",
+      "id": "hero_img_thre_link",
+      "label": {
+        "en": "Image link"
+      }
+    },
+	{
+      "type": "image_picker",
+      "id": "hero_img_four_img",
+      "label": {
+        "en": "Image Four"
+      }
+    },
+    {
+      "type": "url",
+      "id": "hero_img_four_link",
+      "label": {
+        "en": "Image link"
+      }
+    },
+	{
+      "type": "image_picker",
+      "id": "hero_img_five_img",
+      "label": {
+        "en": "Image Five"
+      }
+    },
+    {
+      "type": "url",
+      "id": "hero_img_five_link",
+      "label": {
+        "en": "Image link"
+      }
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Hero Images"
+      }
+    }
+  ]
+}
+{% endschema %}

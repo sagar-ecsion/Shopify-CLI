@@ -1,0 +1,123 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<style>
+  div.toastify{
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  
+  img.toastify-avatar{
+   width: 7.5rem !important;
+   height: 7.5rem !important;
+  }
+</style>  
+
+{%- capture varNameArray -%}
+{%- for block in section.blocks -%}  
+ {%- assign product = block.settings.selectedProduct -%}
+ {%- assign varName = product.handle | truncate: 8, "" | replace: '-', '_' -%}
+   {{- '' | append: varName | append: ',' -}}
+
+{%- endfor -%}  
+{%- endcapture -%}
+
+
+
+{% for block in section.blocks %}    
+
+  {% assign product = block.settings.selectedProduct %}
+
+
+<script>
+ {% assign varName = product.handle | truncate: 8, "" | replace: '-', '_' %}
+ 
+  
+  let _{{ varName }} = Toastify({
+    text: "<p>Someone bought <b> {{ product.title  }}  </b> </p>",
+  duration: 9000,
+  destination: "",
+  newWindow: true,
+   avatar: "{{product.featured_image | img_url: 'medium' }}",    
+  close: true,
+  gravity: "bottom", // `top` or `bottom`
+  position: "left", // `left`, `center` or `right`
+  backgroundColor : "white",  
+  style: { width:"400px", color: "black" },  
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  escapeMarkup: false
+}).showToast();
+</script>  
+
+{% endfor %}
+
+<script>
+  var names = "{{ varNameArray | strip | strip_newlines }}";
+  
+  let arrayNames = names.split(",");
+  arrayNames.popup();
+</script>
+
+<script>
+  let timer = Math.random()  * ( {{ section.settings.maximumTime }} - {{ section.settings.minimumTime }}) - {{ section.settings.minimumTime }});
+  
+  function showProductSale(){
+   timer = Math.random()  * ( {{ section.settings.maximumTime }} - {{ section.settings.minimumTime }}) - {{ section.settings.minimumTime }});
+    
+    
+    eval("_" + arrayNames[Math.floor(Math.random() * (arrayNames.length - 0) - 0 )] + ".showToast()");
+    
+    
+  
+   setTimeout(showProductSale, timer);
+  }
+  
+    setTimeout(showProductSale, timer);
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Sales Popup Notification",
+    "settings": [
+ {
+            "type" : "number",
+            "id" : "maximumTime",
+            "default" : 10000,
+            "label" : "Max Time"
+        },
+        
+        
+        {
+           "type" : "number",
+            "id" : "minTime",
+            "default" : 0,
+            "label" : "Min Time"
+        } 
+
+],
+
+    "blocks" : [
+        {
+          "name":"Product",
+          "type":"Sales-product-popup",
+          "settings": [
+              {
+                "type" : "product",
+                "id" : "selectedProduct",                
+                "label" : "Product"
+                 
+              }
+           ]
+        }
+   ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

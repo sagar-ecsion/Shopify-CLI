@@ -1,0 +1,853 @@
+{
+  "current": {
+    "color_text": "#162950",
+    "color_body_text": "#6d6d6d",
+    "color_sale_text": "#DA2F0C",
+    "color_button": "#DA2F0C",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#162950",
+    "color_text_field_text": "#162950",
+    "color_text_field_border": "#909090",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#3d3d3d",
+    "image_overlay_opacity": 40,
+    "color_borders": "#e4e4e4",
+    "color_body_bg": "#f8f8f8",
+    "type_header_font": "oswald_n3",
+    "type_header_base_size": 26,
+    "type_base_font": "roboto_n4",
+    "type_base_size": 18,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "https:\/\/gh-theme.myshopify.com\/",
+    "social_facebook_link": "https:\/\/gh-theme.myshopify.com\/",
+    "social_pinterest_link": "https:\/\/gh-theme.myshopify.com\/",
+    "social_instagram_link": "https:\/\/gh-theme.myshopify.com\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#e8f3f6",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Source Sans Pro",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#23314e",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/grounds-hounds-logo-blue_410x_1.png",
+          "logo_max_width": 120,
+          "main_linklist": "main-menu",
+          "message": true,
+          "home_page_only": true,
+          "message_text": "FREE SHIPPING ON DOMESTIC ORDERS OVER $50",
+          "message_link": "",
+          "color_bg": "#162950",
+          "color_text": "#ffffff"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/grounds_hounds_april_20210687_90a2f9af-a09b-4120-9aff-003b728bd4f7_1800x_1.webp",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "x-large",
+          "text_size": "medium",
+          "title": "OUR MISSION",
+          "text": "<p>AT GROUNDS & HOUNDS COFFEE CO.®, WE ARE COMMITTED TO USING A PORTION OF PROFITS FROM EVERY SALE TO SUPPORT ANIMAL RESCUE ORGANIZATIONS PROVIDING SAFE-HAVENS FOR PUPS BETWEEN HOMES. <strong>GREAT COFFEE SHOULD FUEL A GREATER PURPOSE!<\/strong><\/p>",
+          "button_label": "LEARN MORE",
+          "button_link": "shopify:\/\/pages\/about-us"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1492095993817": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hero_desk2_RS-resized_1800x_5bba953d-6424-48f5-9408-589da7012945.webp",
+              "alignment": "left center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "d19e860d-5543-4609-82ec-3e307a1cefde": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Artboard_1_copy_6_1800x_c22b81a6-0778-4cf1-872f-43223ee17965.webp",
+              "alignment": "right center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "slideshow-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hero_desk_1800x_ad4ce2ba-2a30-4526-9125-11138bdeea4d.webp",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1492095993817",
+          "d19e860d-5543-4609-82ec-3e307a1cefde",
+          "slideshow-0"
+        ],
+        "settings": {
+          "slideshow_height": "medium",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": false,
+          "autorotate": true,
+          "autorotate_speed": 9
+        }
+      },
+      "featured-collections": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured Products",
+          "collection": "pets-food",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "sort_enable": true
+        }
+      },
+      "1492033877875": {
+        "type": "quotes",
+        "blocks": {
+          "1492033877875-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "1492033877875-0"
+        ],
+        "settings": {
+          "title": "Testimonials"
+        }
+      },
+      "1492033924902": {
+        "type": "custom-content",
+        "blocks": {
+          "1492033924902-0": {
+            "type": "text",
+            "settings": {
+              "title": "TAG YOUR PUP WITH #GROUNDSANDHOUNDS",
+              "text": "<p>Follow us on Instagram <a href=\"https:\/\/www.instagram.com\/grounds_and_hounds\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/grounds_and_hounds\/\">@grounds_and_hounds<\/a><\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1492033924902-0"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1492096252560": {
+        "type": "collection-list",
+        "blocks": {
+          "1492096252560-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "pets-bed"
+            }
+          },
+          "1492096252560-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "pets-food"
+            }
+          },
+          "1492096252560-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "pets-leash"
+            }
+          }
+        },
+        "block_order": [
+          "1492096252560-0",
+          "1492096252560-1",
+          "1492096252560-2"
+        ],
+        "settings": {
+          "title": "Collection list",
+          "grid": 3
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "grid",
+          "blog_show_author": true,
+          "blog_show_date": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "link_list": {
+            "type": "link_list",
+            "settings": {
+              "title": "HELP & SUPPORT",
+              "menu": "footer"
+            }
+          },
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "MISSION",
+              "text": "<p>We are committed to using the sale of the best organic and eco-friendly specialty coffees to support rescue organizations providing safe-havens for pups between homes<\/p>"
+            }
+          },
+          "7d4dc054-e0c4-4228-a867-d463d5f2b1d9": {
+            "type": "text",
+            "settings": {
+              "title": "IMPACT",
+              "text": "<p>20% of all Grounds & Hounds profits help fund rescue initiatives.Questions? Email us at <a href=\"mailto:info@groundsandhoundscoffee.com\" title=\"mailto:info@groundsandhoundscoffee.com\">info@groundsandhoundscoffee.com<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "link_list",
+          "text",
+          "7d4dc054-e0c4-4228-a867-d463d5f2b1d9"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "color_footer_bg": "#f8f8f8",
+          "color_footer_text": "#6d6d6d",
+          "show_currency_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "16563135904bd03f01": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Blog posts",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": true
+        }
+      },
+      "sales-popup-notification": {
+        "type": "sales-popup-notification",
+        "blocks": {
+          "37b26aa5-1996-4978-bc50-542a49bcfa43": {
+            "type": "Sales-product-popup",
+            "settings": {
+              "selectedProduct": "adjustable-mesh-dog-collar"
+            }
+          }
+        },
+        "block_order": [
+          "37b26aa5-1996-4978-bc50-542a49bcfa43"
+        ],
+        "settings": {
+          "maximumTime": 1000,
+          "minTime": 0
+        }
+      },
+      "1656318132a6c90dec": {
+        "type": "hero-image-section",
+        "settings": {
+          "hero_img_one_img": "shopify:\/\/shop_images\/gh-5grid-1.jpg",
+          "hero_img_one_link": "shopify:\/\/collections",
+          "hero_img_two_img": "shopify:\/\/shop_images\/drinkware.webp",
+          "hero_img_two_link": "shopify:\/\/collections\/pets-bed",
+          "hero_img_three_img": "shopify:\/\/shop_images\/gh-5grid-coffee.jpg",
+          "hero_img_thre_link": "shopify:\/\/collections\/pets-food",
+          "hero_img_four_img": "shopify:\/\/shop_images\/newapparel.webp",
+          "hero_img_four_link": "shopify:\/\/collections\/pet-toys",
+          "hero_img_five_img": "shopify:\/\/shop_images\/newarrivals.webp",
+          "hero_img_five_link": "shopify:\/\/collections\/pets-leash"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "165631847804ccac36": {
+        "type": "instafeed",
+        "settings": {
+          "heading_size": 20,
+          "feed_width": 100,
+          "html_area": ""
+        }
+      },
+      "1656484848348496c0": {
+        "type": "newsletter",
+        "settings": {
+          "section_title": "JOIN THE CREW & SAVE 10%",
+          "subheading": "<p><strong>Receive 10% off your first order<\/strong><\/p>",
+          "show_background": true
+        }
+      },
+      "sidebar-filter": {
+        "type": "sidebar-filter",
+        "blocks": {
+          "222d30a9-888e-4a27-aa98-0cc253a5f04b": {
+            "type": "filter_color",
+            "settings": {
+              "enable": true,
+              "title": "Color",
+              "list_tags": "pink,",
+              "show_product_color_img": true
+            }
+          },
+          "522022c1-54e3-4201-b938-04a782c826da": {
+            "type": "filter_text",
+            "settings": {
+              "enable": true,
+              "title": "Price",
+              "list_tags": "Less than $100,\n$10 - $100, \n$1000- $1500 \nAbove $1500,"
+            }
+          },
+          "35659449-00d5-4158-b061-4013db7f5216": {
+            "type": "filter_text",
+            "settings": {
+              "enable": true,
+              "title": "Brand",
+              "list_tags": "Pet Life"
+            }
+          },
+          "b15b8fb0-d6d2-4517-a945-22597d73c6c2": {
+            "type": "filter_text",
+            "settings": {
+              "enable": true,
+              "title": "Product Type",
+              "list_tags": "leash"
+            }
+          }
+        },
+        "block_order": [
+          "222d30a9-888e-4a27-aa98-0cc253a5f04b",
+          "522022c1-54e3-4201-b938-04a782c826da",
+          "35659449-00d5-4158-b061-4013db7f5216",
+          "b15b8fb0-d6d2-4517-a945-22597d73c6c2"
+        ],
+        "settings": {
+          "display_sidebar": true,
+          "show_sidebar": "left",
+          "enable_categories": true,
+          "title_categories": "Categories",
+          "style_categories": "style_show_all",
+          "link_list": "main-menu",
+          "enable_product": true,
+          "title_product": "Top Sellers",
+          "collection": "",
+          "limit": "8",
+          "enable_img": true,
+          "image_img": "shopify:\/\/shop_images\/Artboard_1_copy_6_1800x_c22b81a6-0778-4cf1-872f-43223ee17965.webp",
+          "link_img": "",
+          "enable_custom_block": true,
+          "title_custom_block": "Custom Block",
+          "quote_custom_block": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>"
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "display_recently_viewed_products": true,
+          "recently_viewed_products_title": "Recently Viewed Products",
+          "number_of_recently_viewed_products": "2"
+        }
+      },
+      "countdown-bar": {
+        "type": "countdown-bar",
+        "settings": {
+          "title": "Pet festival",
+          "maxTime": 14,
+          "enable_countdown": true
+        }
+      }
+    },
+    "content_for_index": [
+      "slideshow",
+      "featured-collections",
+      "hero",
+      "1656318132a6c90dec",
+      "165631847804ccac36",
+      "1492033924902",
+      "1492096252560",
+      "1492033877875",
+      "16563135904bd03f01",
+      "1656484848348496c0"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {
+              }
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {
+              }
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {
+              }
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {
+              }
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {
+          }
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}
