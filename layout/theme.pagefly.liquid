@@ -202,6 +202,13 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 <!--Gem_Page_Header_Script-->
 {% include 'gem-app-header-scripts' %}
 <!--End_Gem_Page_Header_Script-->
+  
+  {{ 'countdown.js' | asset_url | script_tag }}
+   {{ 'countdown.css' | asset_url | stylesheet_tag }}
+  
+<!--  from github  -->
+  
+<!--  /fromgithub  -->
 </head>
 
 <body class="template-{{ request.page_type | handle }}"><div class="pagefly-container">{{ content_for_layout }}</div></body>
