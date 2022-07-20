@@ -168,7 +168,7 @@
                   <div class="grid__item {{ grid_item_width }}">
                     <div class="grid-view-item">
                       <a href="#" class="grid-view-item__link">
-                        <div class="grid-view-item__image">
+                        <div class="grid-view-item__image" style="height:20px;">
                           {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
                           {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
                         </div>
