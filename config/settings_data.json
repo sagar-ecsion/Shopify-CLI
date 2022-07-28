@@ -427,7 +427,7 @@
         "type": "countdown-bar",
         "settings": {
           "title": "Pet festival",
-          "maxTime": 14,
+          "maxTime": 5,
           "enable_countdown": true
         }
       }
